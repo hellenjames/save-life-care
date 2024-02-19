@@ -1,0 +1,4 @@
+@use "../../utilities/mixins" as *;
+.maincontent {
+  @include flex(space-between, center);
+}
