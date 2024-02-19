@@ -1,0 +1,29 @@
+@use "../../utilities/variables" as *;
+@use "../../utilities/mixins" as *;
+
+header{
+  // background-image: url("../images/non-communicable.png");
+  background-repeat: no-repeat;
+  background:rgb(88, 162, 211);
+  height:70vh;
+}
+.nav__section{
+  @include flex (space-between,center);
+  flex-direction: row;
+}
+.nav__right ul{
+  list-style-type: none;
+  color:#fff;
+  @include flex (space-between,center);
+  gap:3em;
+}
+.hero__content{
+  @include flex (space-between,center);
+&--left{
+  flex:1;
+  
+}
+&--right{
+  flex:1;
+}
+}
