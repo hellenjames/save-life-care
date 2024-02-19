@@ -7,6 +7,9 @@ header{
   background:rgb(88, 162, 211);
   height:70vh;
 }
+.nav{
+  padding: 2em 0
+}
 .nav__section{
   @include flex (space-between,center);
   flex-direction: row;
@@ -17,11 +20,14 @@ header{
   @include flex (space-between,center);
   gap:3em;
 }
+.nav__right ul li a{
+  text-decoration: none;
+  color: greenyellow;
+}
 .hero__content{
   @include flex (space-between,center);
 &--left{
-  flex:1;
-  
+  flex:1; 
 }
 &--right{
   flex:1;
