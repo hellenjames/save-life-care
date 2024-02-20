@@ -2,21 +2,12 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Josefin Sans", sans-serif;
 }
 
 .container {
   width: 90%;
   margin: 0 auto;
-}
-
-header {
-  background-repeat: no-repeat;
-  background: rgb(88, 162, 211);
-  height: 70vh;
-}
-
-.nav {
-  padding: 2em 0;
 }
 
 .nav__section {
@@ -27,10 +18,55 @@ header {
   flex-wrap: wrap;
   flex-direction: row;
 }
-
 .nav__right ul {
   list-style-type: none;
   color: #fff;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 2em;
+}
+.nav__right ul li {
+  padding: 1em;
+}
+.nav__right ul li:hover {
+  background-color: #03A9F5;
+}
+.nav__right ul li:hover a {
+  color: #fff;
+}
+.nav__right ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+.hero {
+  background-image: url("../images/hero-image.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-color: crimson;
+  height: 50vh;
+}
+.hero__content {
+  width: 40%;
+  color: #fff;
+}
+.hero__content:h4 {
+  margin: 10px 0;
+}
+
+.guider {
+  margin: 3em 0;
+}
+.guider__content {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -38,22 +74,27 @@ header {
   flex-wrap: wrap;
   gap: 3em;
 }
-
-.nav__right ul li a {
-  text-decoration: none;
-  color: greenyellow;
+.guider__content div {
+  flex: 1;
 }
-
-.hero__content {
+.guider__cards {
+  box-shadow: 0 0 5px lightgray;
+}
+.guider__cards div {
+  padding: 1em;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-direction: row;
+  justify-content: center;
+  align-items: flex-end;
+  flex-direction: column;
   flex-wrap: wrap;
+  gap: 1em;
 }
-.hero__content--left {
-  flex: 1;
+.guider__cards div p a {
+  color: red;
 }
-.hero__content--right {
-  flex: 1;
+.guider__cards h4 {
+  background-color: #03A9F5;
+  text-align: center;
+  padding: 2em 0;
+  font-size: 1.5rem;
 }
