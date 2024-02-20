@@ -1,12 +1,8 @@
 @use "../../utilities/variables" as *;
 @use "../../utilities/mixins" as *;
-.main__content{
-@include flex(space-between,center);
-align-items: center;
-padding-left: 4em;
-justify-content: center;
+.main__content {
+  @include flex(space-between, center);
 }
-.contact__images{
-    background-color: rgb(88, 162, 211);
+.contact__images {
+  background-color: rgb(88, 162, 211);
 }
-
