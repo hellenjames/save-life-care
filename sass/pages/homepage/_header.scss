@@ -1,29 +1,48 @@
 @use "../../utilities/variables" as *;
 @use "../../utilities/mixins" as *;
+.nav {
+  &__section {
+    @include flex(space-between, center);
+    flex-direction: row;
+  }
+  &__right {
+    ul {
+      list-style-type: none;
+      color: #fff;
+      @include flex(flex-start, center);
+      gap: 2em;
+      li {
+        padding: 1em;
+        &:hover{
+          background-color: $blue;
+          a{
 
-header{
-  // background-image: url("../images/non-communicable.png");
+            color: $white;
+          }
+        }
+        a {
+          text-decoration: none;
+          color: black;
+        }
+      }
+    }
+  }
+}
+
+.hero {
+  background-image: url("../images/hero-image.jpg");
   background-repeat: no-repeat;
-  background:rgb(88, 162, 211);
-  height:70vh;
-}
-.nav__section{
-  @include flex (space-between,center);
-  flex-direction: row;
-}
-.nav__right ul{
-  list-style-type: none;
-  color:#fff;
-  @include flex (space-between,center);
-  gap:3em;
-}
-.hero__content{
-  @include flex (space-between,center);
-&--left{
-  flex:1;
+  background-size: cover;
+  background-position: center center;
+  @include flex(flex-start, center);
+    background-color: crimson;
+  height: 50vh;
+  &__content{
+    width: 40%;
+    color:$white;
+    &:h4{
+      margin:10px 0;
+    } 
+  }
   
-}
-&--right{
-  flex:1;
-}
 }
