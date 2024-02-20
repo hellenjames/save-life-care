@@ -1,4 +1,26 @@
 @use "../../utilities/mixins" as *;
 .maincontent {
-  @include flex(space-between, center);
+  @include flex(space-between,center);
+  align-items: center;
+  font-size: 2em;
+  padding: 2em 6em;
+}
+.maincontent__left{
+ justify-content: (center);
+ padding:(2em 4em);
+}
+.maincontent__right h2{
+padding-bottom:0.5em;
+}
+.health{
+  color:rgb(88, 162, 211);
+}
+.btn button{
+  background-color:rgb(88, 162, 211);
+  color:white;
+  border: none;
+border-radius: 2em;
+padding: 1em;
+font-size: 1em;
+margin-top: 2em;
 }

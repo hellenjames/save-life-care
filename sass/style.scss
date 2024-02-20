@@ -3,4 +3,11 @@
 @use "./utilities/base" as *;
 @use "./pages/homepage/header";
 @use "./pages/homepage/footer";
+
+@use "./pages/about/about";
+@use "./pages/contact/contact";
+
+  
+
 @use "./pages/homepage/main";
+
