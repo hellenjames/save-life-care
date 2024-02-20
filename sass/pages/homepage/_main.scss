@@ -17,8 +17,9 @@
     @include flex(center, flex-end, column);
     gap:1em;
     p{
+      line-height: 1.5em;
       a{
-        color: red;
+        color:$green;
       }
     }
   }
