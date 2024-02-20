@@ -52,15 +52,19 @@
   align-items: center;
   flex-direction: row;
   flex-wrap: wrap;
-  background-color: crimson;
+  border-radius: 50px;
   height: 50vh;
 }
 .hero__content {
   width: 40%;
   color: #fff;
 }
-.hero__content:h4 {
-  margin: 10px 0;
+.hero__content--right {
+  line-height: 1.5em;
+}
+.hero__content--right h1 {
+  margin: 1.5em 0;
+  color: hsl(143, 100%, 66%);
 }
 
 .guider {
@@ -89,8 +93,11 @@
   flex-wrap: wrap;
   gap: 1em;
 }
+.guider__cards div p {
+  line-height: 1.5em;
+}
 .guider__cards div p a {
-  color: red;
+  color: hsl(143, 100%, 66%);
 }
 .guider__cards h4 {
   background-color: #03A9F5;
