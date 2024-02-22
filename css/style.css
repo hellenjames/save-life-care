@@ -102,6 +102,9 @@
   font-size: 3rem;
   line-height: 1;
 }
+.hero__content--left p {
+  font-size: 1.2rem;
+}
 .hero__content--left--content {
   display: flex;
   justify-content: flex-start;
@@ -136,7 +139,6 @@
 }
 .footer {
   background-color: rgb(231, 231, 231);
-  margin-top: 5em;
   padding: 2em 0;
 }
 .footer__content {
@@ -186,38 +188,42 @@
   color: black;
 }
 
-.maincontent {
+.maincontent__container {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   flex-direction: row;
   flex-wrap: no-wrap;
-  align-items: center;
-  font-size: 2em;
-  padding: 2em 6em;
+  gap: 2em;
+  margin-top: 15vh;
 }
 
-.maincontent__left {
-  justify-content: center;
-  padding: 2em 4em;
+.maincontent__right, .maincontent__left {
+  flex: 1;
 }
 
 .maincontent__right h2 {
-  padding-bottom: 0.5em;
+  font-size: 4rem;
+}
+.maincontent__right p {
+  font-size: 2rem;
+  line-height: 1.5;
+  margin: 1em 0;
 }
 
 .health {
-  color: rgb(88, 162, 211);
+  color: #03A9F5;
 }
 
 .btn button {
-  background-color: rgb(88, 162, 211);
+  background-color: #03A9F5;
   color: white;
-  border: none;
-  border-radius: 1em;
-  padding: 1em;
   font-size: 0.5em;
-  margin-top: 2em;
+  border: none;
+}
+
+.contact__us {
+  margin-top: 15vh;
 }
 
 .cotact__us__container {
@@ -226,9 +232,6 @@
   align-items: center;
   flex-direction: row;
   flex-wrap: no-wrap;
-  align-items: center;
-  padding: 2em 4em;
-  font-size: 2em;
 }
 
 .content__images {
@@ -238,24 +241,48 @@
 }
 
 .inputscards {
-  text-align: center;
-  background-color: #03a9f5;
-  color: rgb(88, 162, 211);
-  height: 40vh;
+  background-color: #03A9F5;
+  padding: 2em 0;
   width: 100%;
-  text-align: center;
   border: 1px solid gray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: no-wrap;
+}
+.inputscards form {
+  background-color: white;
+  width: 30%;
+  padding: 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: no-wrap;
+  gap: 1em;
+}
+.inputscards form input, .inputscards form textarea {
+  width: 100%;
+  padding: 1.5em 1em;
+  border: none;
+  outline: none;
+  box-shadow: 0 0 5px lightgrey;
 }
 
-.main__content h3 {
-  color: black;
+.main__content h2 {
   text-align: center;
   font-size: 4rem;
-  margin: 0.5em 1em;
+  margin: 0.3em 1em;
+}
+
+.main__content p {
+  font-size: 2rem;
+  margin: 0.3em 1em;
 }
 
 .btn {
-  background-color: rgb(88, 162, 211);
+  background-color: #03A9F5;
   color: white;
   padding: 0.3em 6rem;
   border: none;
@@ -264,30 +291,8 @@
   font-size: 2.5em;
 }
 
-.cards {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  flex-direction: row;
-  flex-wrap: no-wrap;
-  width: 100%;
-}
-
 .inputscards {
   text-align: center;
-}
-
-.inputscards input {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-direction: column;
-  flex-wrap: no-wrap;
-  gap: 4rem;
-  margin: 2rem 6rem;
-  text-align: center;
-  padding: 1rem 3em;
-  font-size: 1.4rem;
 }
 
 .main__content {
@@ -306,10 +311,6 @@
 
 .image img {
   margin-bottom: 2rem;
-}
-
-.cards h2 {
-  font-size: 4em;
 }
 
 @media screen and (max-width: 600px) {
@@ -407,6 +408,7 @@
 .testimonials__content h4 {
   color: #03A9F5;
   font-size: 1.5rem;
+  margin-bottom: 3em;
 }
 .testimonials__content__container {
   display: flex;
@@ -448,10 +450,10 @@
     line-height: 1;
   }
 }
-.diabetes {
+.disease {
   margin-top: 12vh;
 }
-.diabetes h2 {
+.disease h2 {
   color: #03A9F5;
   margin-bottom: 1.5em;
   background-color: rgb(231, 231, 231);
@@ -460,150 +462,32 @@
   font-size: 2rem;
   padding: 2em;
 }
-.diabetes__content {
+.disease__content {
+  margin: 2em 0;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   flex-direction: row;
   flex-wrap: no-wrap;
   gap: 3em;
 }
-.diabetes__content h3 {
+.disease__content h3 {
   color: #03A9F5;
   background-color: rgb(231, 231, 231);
   font-size: 2rem;
+  padding: 0.5em;
 }
-.diabetes__content div {
+.disease__content div {
   flex: 1;
 }
-.diabetes__cards {
+.disease__cards {
   box-shadow: 0 0 5px lightgray;
 }
-.diabetes__cards li {
+.disease__cards li {
   font-size: 1.5rem;
+  line-height: 1.5;
 }
-.diabetes__cards div {
-  padding: 1em;
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-  flex-direction: column;
-  flex-wrap: no-wrap;
-  gap: 1em;
-}
-
-.cancer {
-  margin-top: 12vh;
-}
-.cancer h2 {
-  color: #03A9F5;
-  margin-bottom: 1.5em;
-  background-color: rgb(231, 231, 231);
-  height: 10vh;
-  text-align: center;
-  font-size: 2rem;
-  padding: 2em;
-}
-.cancer__content {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-direction: row;
-  flex-wrap: no-wrap;
-  gap: 3em;
-}
-.cancer__content h3 {
-  color: #03A9F5;
-  background-color: rgb(231, 231, 231);
-  font-size: 2rem;
-}
-.cancer__content div {
-  flex: 1;
-}
-.cancer__cards {
-  box-shadow: 0 0 5px lightgray;
-}
-.cancer__cards div {
-  padding: 1em;
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-  flex-direction: column;
-  flex-wrap: no-wrap;
-  gap: 1em;
-}
-
-.epilepsy {
-  margin-top: 12vh;
-}
-.epilepsy h2 {
-  color: #03A9F5;
-  margin-bottom: 1.5em;
-  background-color: rgb(231, 231, 231);
-  height: 10vh;
-  text-align: center;
-  font-size: 2rem;
-  padding: 2em;
-}
-.epilepsy__content {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-direction: row;
-  flex-wrap: no-wrap;
-  gap: 3em;
-}
-.epilepsy__content h3 {
-  color: #03A9F5;
-  background-color: rgb(231, 231, 231);
-}
-.epilepsy__content div {
-  flex: 1;
-}
-.epilepsy__cards {
-  box-shadow: 0 0 5px lightgray;
-}
-.epilepsy__cards div {
-  padding: 1em;
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-  flex-direction: column;
-  flex-wrap: no-wrap;
-  gap: 1em;
-}
-
-.arthritis {
-  margin-top: 12vh;
-}
-.arthritis h2 {
-  color: #03A9F5;
-  margin-bottom: 1.5em;
-  background-color: rgb(231, 231, 231);
-  height: 10vh;
-  text-align: center;
-  font-size: 2rem;
-  padding: 2em;
-}
-.arthritis__content {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-direction: row;
-  flex-wrap: no-wrap;
-  gap: 3em;
-}
-.arthritis__content h3 {
-  color: #03A9F5;
-  background-color: rgb(231, 231, 231);
-}
-.arthritis__content div {
-  flex: 1;
-}
-.arthritis__cards {
-  box-shadow: 0 0 5px lightgray;
-}
-.arthritis__cards div {
+.disease__cards div {
   padding: 1em;
   display: flex;
   justify-content: center;

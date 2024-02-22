@@ -1,26 +1,31 @@
 @use "../../utilities/mixins" as *;
-.maincontent {
-  @include flex(space-between,center);
-  align-items: center;
-  font-size: 2em;
-  padding: 2em 6em;
+@use "../../utilities/variables" as *;
+
+.maincontent__container {
+  @include flex(space-between,flex-start);
+  gap: 2em;
+  margin-top: 15vh;
 }
-.maincontent__left{
- justify-content: (center);
- padding:(2em 4em);
+
+.maincontent__right, .maincontent__left{
+flex:1;
 }
-.maincontent__right h2{
-padding-bottom:0.5em;
+.maincontent__right{
+  h2{
+    font-size: 4rem;
+  }
+  p{
+    font-size: 2rem;
+    line-height: 1.5;
+    margin: 1em 0;
+  }
 }
 .health{
-  color:rgb(88, 162, 211);
+  color:$blue;
 }
 .btn button{
-  background-color:rgb(88, 162, 211);
+  background-color:$blue;
   color:white;
-  border: none;
-border-radius: 1em;
-padding: 1em;
 font-size: 0.5em;
-margin-top:2em;
+border: none;
 }

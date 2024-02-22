@@ -1,6 +1,6 @@
 @use "../../utilities/variables" as *;
 @use "../../utilities/mixins" as *;
-.arthritis {
+.disease {
     margin-top: 12vh;
     h2{
       color:$blue;
@@ -12,19 +12,26 @@
       padding:2em;
     }
     &__content {
-    
+    margin: 2em 0;
       h3 {
         color: $blue;
         background-color: $lightgray;
-        
+        font-size: 2rem;
+        padding: .5em
+        // margin-bottom: 1em
        
       }
-      @include flex(space-between, center);
+      @include flex(space-between, flex-start);
       gap: 3em;
       div {
         flex: 1;
       }
     } &__cards {
+        li{
+            font-size: 1.5rem;
+            line-height: 1.5;
+          }
+ 
       box-shadow: 0 0 5px lightgray;
       div {
         padding: 1em;

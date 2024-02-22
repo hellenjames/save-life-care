@@ -26,6 +26,9 @@
         flex: 1;
       }
     } &__cards {
+        li{
+            font-size: 1.5rem;
+          }
       box-shadow: 0 0 5px lightgray;
       div {
         padding: 1em;

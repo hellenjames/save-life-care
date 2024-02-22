@@ -1,10 +1,10 @@
 @use "../../utilities/variables" as *;
 @use "../../utilities/mixins" as *;
+.contact__us{
+  margin-top: 15vh
+}
 .cotact__us__container{
   @include flex(space-between, center);
-  align-items: center;
-  padding: 2em 4em;
-  font-size: 2em;
 }
 .content__images {
   justify-content: center;
@@ -12,22 +12,39 @@
   border-radius: 20px;
 }
 .inputscards{
-  text-align:center;
-  background-color:#03a9f5;
-  color:rgb(88, 162, 211);
-  height: 40vh;
+  background-color:$blue;
+  padding: 2em 0;
+  // height: 40vh;
   width: 100%;
-  text-align: center;
   border:1px solid gray;
+  @include flex(center, center, column);
+  form{
+    background-color: white;
+
+    width: 30%;
+    padding: 1em;
+    @include flex(center, center, column);
+    gap: 1em;
+    input, textarea{
+      width: 100%;
+      padding: 1.5em 1em;
+      border: none;
+      outline: none;
+      box-shadow: 0 0 5px lightgrey;
+    }
+  }
 }
-.main__content h3{
-  color: black;
+.main__content h2{
   text-align: center;
   font-size:4rem;
-  margin: 0.5em 1em;
+  margin: 0.3em 1em;
+}
+.main__content p{
+  font-size:2rem;
+  margin: 0.3em 1em;
 }
 .btn{
-  background-color:rgb(88, 162, 211);
+  background-color:$blue;
   color:white;
   padding: 0.3em 6rem;
   border: none;
@@ -35,21 +52,11 @@
  margin: 1em;
   font-size:2.5em;
 }
-.cards{
-  @include flex(space-evenly,center);
-  width:100%;
-}
+
 .inputscards{
   text-align:center;
 }
-.inputscards input{
-  @include flex(space-between,center,column);
-  gap: 4rem;
-  margin: 2rem 6rem;
-  text-align:center;
-  padding: 1rem 3em;
-  font-size: 1.4rem;
-}
+
 .main__content{
   text-align: center;
 }
@@ -60,9 +67,6 @@
 }
  .image img{
 margin-bottom:2rem;
-}
-.cards h2{
-  font-size:4em;
 }
 
 @media screen and (max-width:600px) {

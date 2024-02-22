@@ -71,6 +71,9 @@
         font-size: 3rem;
         line-height: 1;
       }
+      p{
+        font-size: 1.2rem
+      }
       &--content {
         @include flex(flex-start, flex-start, column);
         gap: 1.5em;
