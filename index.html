@@ -4,15 +4,19 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Save Life Care</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
       rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="css/style.css" />
   </head>
@@ -34,25 +38,33 @@
                 <li><a href="./pages/contact.html">Contact Us</a></li>
               </ul>
             </div>
+            <div class="humberger">
+              <i class="fa-solid fa-bars"></i>
+            </div>
           </div>
         </div>
       </nav>
       <section class="hero">
         <div class="container">
           <div class="hero__content">
+            <div class="hero__content--left">
+              <div class="hero__content--left--content">
+                <h4>Empowering Lives,Inspiring Health</h4>
+                <h1>
+                  Your Trusted Resource For Thriving With
+                  Non-Communicable-Diseases.
+                </h1>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas
+                  debitis vel, asperiores pariatur aperiam cumque eos at sint
+                  temporibus quam error tempore ea dolorem adipisci eligendi
+                  reiciendis fugit inventore modi.
+                </p>
+                <button><a href="./pages/about.html">Get More</a></button>
+              </div>
+            </div>
             <div class="hero__content--right">
-              <h4>Fast Way To Sava Life</h4>
-              <h1>
-                Eat on A Balanced Diet And Do Exercises.Go For Checkup's
-                Regulary.
-              </h1>
-              <p>
-                Our health is the most valuable wealth.A healthy person is one
-                that is free from diseases and can perform physical activites
-                without getting tired.A person's physical fitness measures
-                health and fitness.It can be achieved through proper nutrition
-                and living in a clean environment.
-              </p>
+              <img src="images/hero-image.png" />
             </div>
           </div>
         </div>
@@ -61,15 +73,18 @@
     <!-- /*main part*/ -->
     <section class="guider">
       <div class="container">
+        <h2>Categories Of NCDs.</h2>
         <div class="guider__content">
           <div class="guider__cards">
             <h4>DIABETES</h4>
             <div>
               <p>
                 Is a health condition which occurs when one’s blood sugar level
-                is too high.
+
+                is too high.It is a disease that have led to the death of many
+                people in this world...
               </p>
-              <p><a href="">Read More</a></p>
+              <p><a href="./pages/diabetes.html">Read More</a></p>
             </div>
           </div>
           <div class="guider__cards">
@@ -77,9 +92,9 @@
             <div>
               <p>
                 Is a health condition where abnormal cells in the body divide in
-                an uncontrollable way and destroy body tissue.
+                an uncontrollable way and destroy body tissue...
               </p>
-              <p><a href="">Read More</a></p>
+              <p><a href="./pages/cancer.html">Read More</a></p>
             </div>
           </div>
           <div class="guider__cards">
@@ -87,9 +102,10 @@
             <div>
               <p>
                 Is the neurological disorder which affects cell activities in
-                one’s brain and that causes seizures.
+                one’s brain and that causes seizures.It may lead one to become
+                absent minded...
               </p>
-              <p><a href="">Read More</a></p>
+              <p><a href="./pages/epilepsy.html">Read More</a></p>
             </div>
           </div>
           <div class="guider__cards">
@@ -98,21 +114,98 @@
               <p>
                 Is a health condition which causes inflammation of one or more
                 joints in one’s body. This, in turn, causes pain and stiffness
-                around the affected area.
+                around the affected area...
               </p>
-              <p><a href="">Read More</a></p>
+              <p><a href="./pages/arthritis.html">Read More</a></p>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <section class="tesimonials">
+    <section class="testimonials">
       <div class="container">
         <div class="testimonials__content">
-          <h4>Testimonials</h4>
-          <img src="" />
+          <h2>Testimonials</h2>
+          <div class="testimonials__content__container">
+            <div class="testimonials__img">
+              <img src="images/back.png" alt="" width="60" />
+            </div>
+            <div class="testimony">
+              <div>
+                <img src="images/user.png" width="150" />
+              </div>
+              <div>
+                <p>
+                  "Am a patient who was suffering from diabetes.I had nice
+                  experience with save life care services developers.They were
+                  able to motivate me till i was able to go to the hospital and
+                  got my treatment done.The services were awesome and they care
+                  for each patient and they have cost effective treatement for
+                  everyone.I strongly suggest their services to those suffering
+                  from NCDs problems."
+                </p>
+              </div>
+              <div>
+                <h4>By Hellen James</h4>
+              </div>
+            </div>
+            <div class="testimonials__img">
+              <img src="images/next.png" alt="" width="60" />
+            </div>
+          </div>
         </div>
       </div>
+      <!-- /*footer*/ -->
+      <footer>
+        <div class="footer">
+          <div class="container">
+            <div class="footer__content">
+              <div class="footer__menu">
+                <a href="index.html">
+                  <img src="images/logo.png" width="100"
+                /></a>
+                <p>Your Health Is Our Priority.</p>
+              </div>
+              <div class="footer__menu">
+                <h5>Quick Links</h5>
+                <ul>
+                  <li><a href="index.html"> Home </a></li>
+                  <li><a href="./pages/about.html">About Us</a></li>
+                  <li><a href="./pages/contact.html">Contact Us</a></li>
+                </ul>
+              </div>
+              <div class="footer__menu">
+                <h5>Categories</h5>
+
+                <ul>
+                  <li><a href="./pages/diabetes.html">Diabetes</a></li>
+                  <li><a href="./pages/cancer.html">Cancer</a></li>
+                  <li><a href="./pages/epilepsy.html">Epilepsy</a></li>
+                  <li><a href="./pages/arthritis.html">Arthritis</a></li>
+                </ul>
+              </div>
+
+              <div class="footer__menu">
+                <h5>Follow Us For More Updates.</h5>
+                <div class="footer__menu--icons">
+                  <a href="https://web.facebook.com/" target="_blank">
+                    <img src="images/facebook.png" width="40" />
+                  </a>
+                  <a href="https://www.instagram.com/" target="_blank">
+                    <img src="images/instagram.png" width="40" />
+                  </a>
+                  <a href="https://twitter.com/" target="_blank">
+                    <img src="images/twitter.png" width="40" />
+                  </a>
+                  <a href="https://ke.linkedin.com/" target="_blank">
+                    <img src="images/linkedin.png" width="40" />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
     </section>
   </body>
 </html>
