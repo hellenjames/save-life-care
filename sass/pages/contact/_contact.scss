@@ -36,7 +36,7 @@
   border: none;
   border-radius: 2em;
  margin: 1em;
-  font-size: 3em;
+  font-size: 2.5em;
 }
 .cards{
   @include flex(space-evenly,center);
@@ -69,8 +69,6 @@ margin-bottom:2rem;
 }
 .cards__right__card{
   margin-right:25rem;
-}.cards__left__card inputs{
-  margin-right: 2em;
 }
 
 
