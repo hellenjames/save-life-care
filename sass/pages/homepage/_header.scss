@@ -1,9 +1,15 @@
 @use "../../utilities/variables" as *;
 @use "../../utilities/mixins" as *;
 .nav {
+  @include flex(center, center);
+  box-shadow: 0 0 6px lightgray;
+  position: fixed;
+  background-color: $white;
+  right: 0;
+  left: 0;
+  top: 0;
   &__section {
     @include flex(space-between, center);
-    flex-direction: row;
   }
   &__right {
     ul {
@@ -29,24 +35,77 @@
 }
 
 .hero {
-  background-image: url("../images/hero-image.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-  @include flex(flex-start, center);
-  // background-color: crimson;
-  border-radius: 50px;
-  height: 50vh;
+  margin-top: 15vh;
+  @include flex(space-between, flex-end, row, wrap);
   &__content {
-    width: 40%;
-    color: $white;
-    &--right {
+    @include flex(space-between, center, row, wrap-reverse);
+    &--left {
+      flex: 1;
       line-height: 1.5em;
+      button {
+        padding: 1em 3em;
+        border-radius: 50px;
+        background-color: $blue;
+        border: none;
+        font-size: 1rem;
+        &:hover {
+          background-color: $white;
+          box-shadow: 0 0 5px lightgray;
+          a {
+            color: $blue;
+          }
+        }
+        a {
+          text-decoration: none;
+          color: $white;
+        }
+      }
+      h4 {
+        font-size: 1.5rem;
+      }
       h1 {
-        margin: 1.5em 0;
-        color:$green;
+        color: $blue;
+        font-size: 3rem;
+        line-height: 1;
+      }
+      &--content {
+        @include flex(flex-start, flex-start, column);
+        gap: 1.5em;
       }
     }
-  
+    &--right {
+      flex: 1;
+    }
   }
- }
+}
+.humberger {
+  display: none;
+}
+@media screen and (max-width: 886px) {
+  .nav__right ul {
+    display: none;
+  }
+  .humberger {
+    display: block;
+  }
+
+  .hero {
+    h4 {
+      font-size: 1rem;
+    }
+  }
+}
+@media screen and (max-width: 570px) {
+  .hero{
+    &__content{
+      &--right{
+        display: none;
+      }
+    }
+  }
+}
+  
+

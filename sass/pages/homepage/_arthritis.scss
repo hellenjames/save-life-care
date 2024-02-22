@@ -1,0 +1,34 @@
+@use "../../utilities/variables" as *;
+@use "../../utilities/mixins" as *;
+.arthritis {
+    margin-top: 12vh;
+    h2{
+      color:$blue;
+      margin-bottom: 1.5em;
+      background-color: $lightgray;
+      height: 10vh;
+      text-align: center;
+      font-size: 2rem;
+      padding:2em;
+    }
+    &__content {
+    
+      h3 {
+        color: $blue;
+        background-color: $lightgray;
+        
+       
+      }
+      @include flex(space-between, center);
+      gap: 3em;
+      div {
+        flex: 1;
+      }
+    } &__cards {
+      box-shadow: 0 0 5px lightgray;
+      div {
+        padding: 1em;
+        @include flex(center, flex-end, column);
+        gap: 1em;
+   
+      }}}
