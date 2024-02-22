@@ -1,0 +1,63 @@
+@use "../../utilities/variables" as *;
+@use "../../utilities/mixins" as *;
+
+.testimonials {
+  h2{
+    text-align: center;
+    color: $blue;
+    font-size: 2.5rem;
+    margin-bottom: 1.5em
+  }
+  
+  &__content {
+    div{
+
+      @include flex(center, center);
+    }
+    img{
+      border-radius:50%;
+    }
+    
+    h4{
+      color: $blue;
+      font-size: 1.5rem;
+    }
+    &__container{
+      @include flex(center, center);
+      div{
+        flex: 1;
+        &:nth-child(2){
+          @include flex(center, center, column);
+          gap: 2em;
+
+          p{
+            // width: 40%;
+            text-align: center;
+            font-size: 1.2rem;
+            line-height: 1.5;
+          }
+
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 886px) {
+  .testimonials{
+    &__content{
+    img{
+      width:10%;
+    }
+    div{
+      flex: none;
+      @include flex(center, center, column);
+    }
+    p{
+      line-height: 1;
+    }
+    }
+  }
+}
+ 
+
+
