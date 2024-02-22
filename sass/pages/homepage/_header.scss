@@ -13,10 +13,9 @@
       gap: 2em;
       li {
         padding: 1em;
-        &:hover{
+        &:hover {
           background-color: $blue;
-          a{
-
+          a {
             color: $white;
           }
         }
@@ -35,14 +34,19 @@
   background-size: cover;
   background-position: center center;
   @include flex(flex-start, center);
-    background-color: crimson;
+  // background-color: crimson;
+  border-radius: 50px;
   height: 50vh;
-  &__content{
+  &__content {
     width: 40%;
-    color:$white;
-    &:h4{
-      margin:10px 0;
-    } 
-  }
+    color: $white;
+    &--right {
+      line-height: 1.5em;
+      h1 {
+        margin: 1.5em 0;
+        color:$green;
+      }
+    }
   
-}
+  }
+ }
