@@ -12,7 +12,7 @@
   border-radius: 20px;
 }
 .inputscards{
-  text-align: center;
+  text-align:center;
   background-color:#03a9f5;
   color:rgb(88, 162, 211);
   height: 40vh;
@@ -43,14 +43,14 @@
   width:100%;
 }
 .inputscards{
-  text-align: center;
+  text-align:center;
 }
 .inputscards input{
   @include flex(space-between,center,column);
   gap: 4rem;
   margin: 2rem 6rem;
-  text-align: center;
-  padding: 1rem 4rem;
+  text-align:center;
+  padding: 1rem 3em;
   font-size: 1.4rem;
 }
 .main__content{
