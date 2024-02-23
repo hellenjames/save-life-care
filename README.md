@@ -27,7 +27,7 @@ This is how the project looks like.
 ![Abou Us Page ](./images/disease.png)
 
 
-## Technologis used
+## Technologies used
 - HTML
 - CSS(SASS)
   
